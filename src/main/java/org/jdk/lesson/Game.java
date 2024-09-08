@@ -10,6 +10,7 @@ public class Game {
 
     public Game(int numDoors)
     {
+        numDoors = Math.max(numDoors, 3);
         doors = new Doors(numDoors);
         leading = new Leading("Монти Холл", doors);
         player = new Player(numDoors);
